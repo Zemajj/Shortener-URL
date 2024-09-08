@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif; /* Шрифт для всего тела */
+    background-color: #f4f4f4; /* Светлый фон */
+    color: #333; /* Темный цвет текста */
+    margin: 0;
+    padding: 20px; /* Отступы вокруг страницы */
+}
+
+.container {
+    max-width: 600px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    background: #fff; /* Белый фон для контейнера */
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+}
+
+h1 {
+    text-align: center; /* Центрирование заголовка */
+    color: #007BFF; /* Цвет заголовка */
+}
+
+h2 {
+    margin-top: 20px; /* Отступ сверху для второго заголовка */
+    color: #555; /* Цвет второго заголовка */
+}
+
+form {
+    display: flex; /* Используем flexbox для формы */
+    justify-content: space-between; /* Распределяем пространство между элементами формы */
+    margin-bottom: 20px; /* Отступ снизу для формы */
+}
+
+input[type="url"] {
+    flex: 1; /* Занимает доступное пространство */
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Рамка */
+    border-radius: 4px; /* Скругление углов */
+    margin-right: 10px; /* Отступ справа */
+}
+
+input[type="submit"] {
+    background-color: #007BFF; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамку */
+    padding: 10px 15px; /* Внутренние отступы */
+    border-radius: 4px; /* Скругление углов */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+}
+
+.message {
+    background-color: #e7f3fe; /* Светлый фон для сообщения */
+    color: #31708f; /* Цвет текста сообщения */
+    border: 1px solid #bce8f1; /* Рамка для сообщения */
+    padding: 10px; /* Внутренние отступы */
+    border-radius: 4px; /* Скругление углов */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы по умолчанию */
+}
+
+li {
+    display: flex; /* Используем flexbox для элементов списка */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+    padding: 10px; /* Внутренние отступы */
+    border-bottom: 1px solid #ccc; /* Рамка снизу для разделения элементов */
+}
+
+.linkss a {
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+    color: #007BFF; /* Цвет текста ссылки */
+}
+
+.linkss a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.button form {
+    display: inline; /* Убираем лишние отступы */
+}
+
+.button input[type="submit"] {
+    background-color: #007BFF; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки удаления */
+    border: 1px solid #ccc; /* Убираем рамку */
+    padding: 5px 10px; /* Отступы кнопки удаления */
+    font-size: 12px; /* Размер шрифта кнопки удаления */
+    cursor: pointer; /* Курсор при наведении */
+    margin-left: 10px; /* Отступ слева от кнопки удаления */
+}
+
+.button input[type="submit"]:hover {
+    background-color: red; /*  цвет фона кнопки удаления */
+    color: black; /* Цвет текста кнопки удаления */
+    transition: background-color 0.5s; /* Плавный переход цвета */
+    cursor: pointer; /* Курсор при наведении */
+}
+
+/* Аниммирование заголовка */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color: #007BFF; /* Начальный цвет текста */
+    }
+    50% {
+        transform: scale(1.1); /* Увеличение размера текста */
+        color: #0056b3; /* Цвет текста в середине анимации */
+    }
+    100% {
+        transform: scale(1);
+        color: #007BFF; /* Возврат к начальному цвету */
+    }
+}
+
+h1 {
+    animation: pulse 1.5s infinite; /* Применение анимации */
+}
